@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Войти</title>
-        <link rel="shortcut icon" href="image/icon.ico" type="image/x-icon">
-        <link rel="stylesheet" href = "header.css">
-        <link rel="stylesheet" href = "main.css">
-        <link rel="stylesheet" href = "footer.css">
-    </head>
-    <body>
-        <header>
-            <div class="content">
-                <a class="logo">
-                    <a href="https://store.steampowered.com/?snr=1_60_4__global-header">
-                    <img src="image/logo_steam.svg" width="176" height="44"> </a>
+
+<head>
+    <title>Войти</title>
+    <link rel="shortcut icon" href="image/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="logo">
+                <a class="logo_holder" href="https://store.steampowered.com/?snr=1_60_4__global-header">
+                    <img src="image/logo_steam.svg" width="176" height="44">
                 </a>
-                <div class="nav_container">
-                    <a href="#">МАГАЗИН</a>
-                    <a href="#">СООБЩЕСТВО</a>
-                    <a href="#">О STEAM</a>
-                    <a href="#">ПОДДЕРЖКА</a>
+            </div>
+            <div class="nav_container">
+                <a href="#">МАГАЗИН</a>
+                <a href="#">СООБЩЕСТВО</a>
+                <a href="#">О STEAM</a>
+                <a href="#">ПОДДЕРЖКА</a>
+            </div>
+            <div id="global_actions">
+                <div class="install_btn">
+                    <a class="install_btn_content"
+                        href="https://store.steampowered.com/about/?snr=1_60_4__global-header">Установить Steam</a>
                 </div>
-                <div id="global_actions">
-                    <div class="install_btn">
-                        <a class="install_btn_content" href="https://store.steampowered.com/about/?snr=1_60_4__global-header">Установить Steam</a>
-                    </div>
-                    <a class="sign_in_link" href="https://store.steampowered.com/login/?redir=login%2F%3Fredir%3D%253Fl%253Drussian%26redir_ssl%3D1%26snr%3D1_4_4__global-header&redir_ssl=1&snr=1_60_4__global-header">войти</a>
+                <a class="sign_in_link"
+                    href="https://store.steampowered.com/login/?redir=login%2F%3Fredir%3D%253Fl%253Drussian%26redir_ssl%3D1%26snr%3D1_4_4__global-header&redir_ssl=1&snr=1_60_4__global-header">войти</a>
+                <a>
                     &nbsp;|&nbsp;
-                    <a class="language_choose">язык &#9660;</a>
+                </a>
+                <a class="language_choose">язык &#9660;</a>
+            </div>
+        </div>
+    </header>
+
+    <!--login part-->
+    <div class="page_content">
+        <div class="login_container">
+            <div class="login">
+                <div class="header_and_main">
+                    <div class="login_header">Войти</div>
+                    <div class="login_main_part_container">
+                        <div class="login_main_part">
+                            <form class="login_form">
+                                <div class="field1">
+                                    <div>Войти, используя имя аккаунта</div>
+                                    <input type="text" value>
+                                </div>
+                                <div class="field2">
+                                    <div>Пароль</div>
+                                    <input type="text" value>
+                                </div>
+                                <div class="checkbox_remind">
+                                    <div class="checkbox"></div>
+                                    <div class="field">Запомнить меня</div>
+                                </div>
+                                <div class="enter_btn_container">
+                                    <button class="enter_btn">Войти</button>
+                                </div>
+                                <a class="help" href="https://help.steampowered.com/wizard/HelpWithLogin?redir=https%3A%2F%2Fstore.steampowered.com%2Flogin%2F%3Fl%3Drussian">Помогите, я не могу войти в свой аккаунт</a>
+                            </form>
+                            <div class="login_function">
+                                <div class="function_tag">Новая функция в бете</div>
+                                <div class="function_dialog">
+                                    <svg class="qr" xmlns="http://www.w3.org/2000/svg"></svg>
+                                    <div class="info">Тестировщики бета-версии мобильного приложения Steam могут войти в
+                                        аккаунт, просканировав QR-код</div>
+                                </div>
+                                <a class="more_info_btn"
+                                    href="https://steamcommunity.com/groups/SteamMobileApp">Подробнее</a>
+                                <div class="show_qr">Я в бета-версии, покажите мне QR-код</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </div>
+</body>
 
-    </body>
 </html>

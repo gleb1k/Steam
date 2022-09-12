@@ -1,0 +1,50 @@
+.page_content .login_container{
+    padding: 0px 8px;
+    width: 100%;
+}
+.page_content .login{
+    padding-top: 80px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page_content .header_and_main{
+    gap:32px;
+}
+.page_content .login_header{
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    font-weight: 200;
+}
+.page_content .login_main_part_container{
+background-color: #181a21;
+border-radius: 4px;
+padding: 24px 32px;
+flex: 1;
+min-width: 636px;
+}
+.page_content .login_form{
+    flex: 1;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+}
+.page_content .field1{
+    display: grid;
+    grid-template-areas:
+        "label hint"
+        "input input";
+    grid-template-columns: 1fr min-content;
+    gap: 2px;
+}
+.page_content .field2{
+    display: grid;
+    grid-template-areas:
+        "label hint"
+        "input input";
+    grid-template-columns: 1fr min-content;
+    gap: 2px;
+}
