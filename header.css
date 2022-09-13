@@ -1,13 +1,12 @@
 *{
-    background-color: #171a21;
     margin: 0;
     padding: 0;
     color: #E9E9E9;
-    background-color: #181A21;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: normal;
 }
 header {
+    background-color: #181A21;
     font-size: 14px;
     text-decoration: none;
     padding-left: 16px;
@@ -88,3 +87,4 @@ header .logo{
     width: 176px;
     height: 44px;
 }
+
