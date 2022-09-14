@@ -35,7 +35,33 @@
                 <a>
                     &nbsp;|&nbsp;
                 </a>
-                <a class="language_choose">язык &#9660;</a>
+                <a class="language_choose">язык
+                    <div class="triangle">
+                        <style>
+                            .block {
+                                background: green;
+                                border-radius: 10px;
+                                padding: 20px;
+                                position: relative;
+                                color: #fff;
+                            }
+
+                            .block::after {
+                                content: '';
+                                position: absolute;
+                                /* Абсолютное позиционирование */
+                                left: 20px;
+                                bottom: -20px;
+                                /* Положение треугольника */
+                                border: 10px solid transparent;
+                                /* Прозрачные границы */
+                                border-top: 10px solid green;
+                                /* Добавляем треугольник */
+                            }
+                        </style>
+                        &#9660;
+                    </div>
+                </a>
             </div>
         </div>
     </header>
@@ -146,25 +172,26 @@
                 </div>
             </div>
 
-        
 
-        <div style="clear: left;"></div>
 
-        <div class="rule"></div>
+            <div style="clear: left;"></div>
 
-        <div class="valve_links">
-            <a href="http://www.valvesoftware.com/about">О Valve</a>
-            &nbsp; | &nbsp;<a href="http://www.valvesoftware.com">Вакансии</a>
-            &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/">Steamworks</a>
-            &nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect">Дистрибуция Steam</a>
-            &nbsp; | &nbsp;<a href="https://help.steampowered.com/ru/?snr=1_44_44_">Служба поддержки</a>
-            &nbsp; | &nbsp;<a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_">Подарочные карты</a>
-            &nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam">
-                <img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
-            &nbsp; | &nbsp;<a href="http://twitter.com/steam">
-                <img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+            <div class="rule"></div>
+
+            <div class="valve_links">
+                <a href="http://www.valvesoftware.com/about">О Valve</a>
+                &nbsp; | &nbsp;<a href="http://www.valvesoftware.com">Вакансии</a>
+                &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/">Steamworks</a>
+                &nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect">Дистрибуция Steam</a>
+                &nbsp; | &nbsp;<a href="https://help.steampowered.com/ru/?snr=1_44_44_">Служба поддержки</a>
+                &nbsp; | &nbsp;<a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_">Подарочные
+                    карты</a>
+                &nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam">
+                    <img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+                &nbsp; | &nbsp;<a href="http://twitter.com/steam">
+                    <img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+            </div>
         </div>
-    </div>
     </div>
 
     <!--footer part-->
