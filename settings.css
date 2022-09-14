@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #E9E9E9;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}
 /* Колесо прокрутки */
 ::-webkit-scrollbar {
     height: 12px;
@@ -5,6 +12,7 @@
     background: transparent;
     z-index: 12;
     overflow: visible;
+    background: #181A21;
 }
 ::-webkit-scrollbar-corner {
     background: #202020;
@@ -28,10 +36,5 @@
     z-index: 12;
     overflow: visible;
 }
-/*---*/
 
-::selection {
-    background: #54a5d4;
-    text-shadow: 1px 1px 2px #000000aa;
-    color: #fff;
-}
+/* Колесо прокрутки */
