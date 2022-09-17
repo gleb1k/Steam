@@ -3,13 +3,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 16px 0 60px 0;
+    padding: 16px 0 100px 0;
     margin: 0;
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    background: #171a21;
+    background: #181A21;
 }
-
+.footer_spacer{
+    background-color: #181A21;
+    height: 50px;
+}
 #footer .footer_content {
     width: 940px;
     margin: 0px auto;
@@ -48,6 +51,11 @@
     font-size: 12px;
     line-height: 16px;
 }
+#footer #footer_text .bottom_text  {
+    padding-bottom: 14px;
+}
+
+
 
 #footer #footer_text a {
     color: #C6D4DF;

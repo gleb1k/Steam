@@ -4,8 +4,9 @@
 
 /*login main part*/
 .page_content .login_container {
-    padding: 0px 8px;
+    padding: 0px 8px; /*ВОТ ТУТ БЕСПОЛЕЗНЫЙ ОТСТУП КОТОРЫЙ ДЕЛАЕТ НИЖНЮЮ ПРОКРУТКУ, НО ВСЕ РУИНИТ*/
     width: 100%;
+    
 }
 
 .page_content .login {
@@ -28,7 +29,7 @@
     text-transform: uppercase;
     letter-spacing: .055em;
     font-weight: 200;
-    margin: 8px 30px;
+    margin: 8px 20px;
 }
 
 .page_content .login_main_part_container {
@@ -206,6 +207,7 @@
     text-align: center;
     color: #fff;
     padding: 8px 16px;
+    text-decoration: none;
 }
 
 .page_content .login_function .show_qr {
@@ -215,7 +217,7 @@
     font-size: 12px;
     line-height: 24px;
     color: #afafaf;
-    padding: 12px 0px;
+    padding: 12px 1px;
     cursor: pointer;
 }
 
@@ -236,7 +238,7 @@
     margin-left: auto;
     width: 100%;
     justify-content: center;
-    background-color: #181A21;
+    background-color:#181A21;
 }
 
 .page_content .login_bottom_row .learn_more_container {
@@ -270,6 +272,7 @@
 .login_bottom_row .subtext {
     font-size: 14px;
     color: #b8b6b4;
+    line-height: 1.4;
 }
 
 .login_bottom_row a {
@@ -284,10 +287,37 @@
     color: #FFFFFF;
 }
 
-.join_btn_container a {
+.join_container a {
     margin: 20px 0 10px 0;
     display: block;
     text-align: center;
+    border-radius: 2px;
+    border: none;
+    padding: 1px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #fff !important;
+    background: transparent;
 }
-
-.join_btn_container span {}
+.join_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+.join_container .join_btn {
+    border-radius: 2px;
+    display: block;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2px;
+}
+.join_container .join_btn span{
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}

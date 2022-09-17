@@ -36,31 +36,7 @@
                     &nbsp;|&nbsp;
                 </a>
                 <a class="language_choose">язык
-                    <div class="triangle">
-                        <style>
-                            .block {
-                                background: green;
-                                border-radius: 10px;
-                                padding: 20px;
-                                position: relative;
-                                color: #fff;
-                            }
-
-                            .block::after {
-                                content: '';
-                                position: absolute;
-                                /* Абсолютное позиционирование */
-                                left: 20px;
-                                bottom: -20px;
-                                /* Положение треугольника */
-                                border: 10px solid transparent;
-                                /* Прозрачные границы */
-                                border-top: 10px solid green;
-                                /* Добавляем треугольник */
-                            }
-                        </style>
-                        &#9660;
-                    </div>
+                    <img src="image/triangle.png">
                 </a>
             </div>
         </div>
@@ -132,17 +108,21 @@
                 <a class="learn_more_link" href="https://store.steampowered.com/about">Узнать больше</a>
             </div>
             <img class="join_image" src="image/join_pc.png">
-            <div class="join_btn_container">
-                <a class="join_btn" href="https://store.steampowered.com/join/?&amp;snr=1_60_4__62">
-                    <span>Присоединиться к Steam</span>
-                </a>
+            <div class="join_container">
+                <div class="join_btn_container">
+                    <a class="join_btn" href="https://store.steampowered.com/join/?&amp;snr=1_60_4__62">
+                        <span>Присоединиться к Steam</span>
+                    </a>
+                </div>
                 <div class="subtext">Steam бесплатен и удобен в использовании.</div>
             </div>
         </div>
     </div>
+    </div>
     <!--login part-->
 
     <!--footer part-->
+    <div class="footer_spacer"></div>
     <div id="footer">
         <div class="footer_content">
 
@@ -155,7 +135,7 @@
             <div id="footer_text">
                 <div>© 2022 Valve Corporation. Все права защищены. Все торговые марки являются собственностью
                     соответствующих владельцев в США и других странах.</div>
-                <div>НДС включён во все цены, где он применим.&nbsp;&nbsp;
+                <div class="bottom_text">НДС включён во все цены, где он применим.&nbsp;&nbsp;
 
                     <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_">Политика
                         конфиденциальности</a>
@@ -193,7 +173,6 @@
             </div>
         </div>
     </div>
-
     <!--footer part-->
 </body>
 
