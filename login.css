@@ -4,9 +4,9 @@
 
 /*login main part*/
 .page_content .login_container {
-    padding: 0px 8px; /*ВОТ ТУТ БЕСПОЛЕЗНЫЙ ОТСТУП КОТОРЫЙ ДЕЛАЕТ НИЖНЮЮ ПРОКРУТКУ, НО ВСЕ РУИНИТ*/
+    /*ВОТ ТУТ БЕСПОЛЕЗНЫЙ ОТСТУП КОТОРЫЙ ДЕЛАЕТ НИЖНЮЮ ПРОКРУТКУ, НО ВСЕ РУИНИТ*/
     width: 100%;
-    
+
 }
 
 .page_content .login {
@@ -238,7 +238,7 @@
     margin-left: auto;
     width: 100%;
     justify-content: center;
-    background-color:#181A21;
+    background-color: #181A21;
 }
 
 .page_content .login_bottom_row .learn_more_container {
@@ -300,6 +300,7 @@
     color: #fff !important;
     background: transparent;
 }
+
 .join_container {
     flex: 1;
     display: flex;
@@ -309,15 +310,85 @@
     text-align: center;
     max-width: 200px;
 }
+
 .join_container .join_btn {
     border-radius: 2px;
     display: block;
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 2px;
 }
-.join_container .join_btn span{
+
+.join_container .join_btn span {
     padding: 0 15px;
     font-size: 15px;
     line-height: 30px;
+}
+
+@media screen and (max-width:911px) {
+    .page_content {
+        min-height: calc(100vh - 120px);
+    }
+
+    .page_content .login {
+        padding-top: 160px;
+    }
+
+    .page_content .login_bottom_row {
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .page_content .login {
+        padding-top: 12px;
+        padding-bottom: 0px;
+    }
+
+    .page_content .header_and_main {
+        position: relative;
+        margin-top: 70px;
+    }
+
+    .page_content .login_header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 8px 105px;
+    }
+
+    .page_content .login_main_part_container {
+        min-width: 0px;
+        background-color: transparent;
+    }
+
+    .page_content .login_main_part {
+        flex-direction: column;
+    }
+
+    .page_content .login_function_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 48px;
+    }
+
+    .page_content .login_function {
+        align-items: center;
+    }
+
+    .page_content .login_function .qr {
+        display: none;
+    }
+
+    .page_content .login_function .info {
+        text-align: center;
+    }
+    .page_content {
+        background: radial-gradient(rgba(24, 26, 33, 0) 0%, #181A21 100%) fixed no-repeat, url(image/background2.jpg) center top no-repeat, #181A21;
+    }
+    .page_content .login_bottom_row{
+        flex-direction: column-reverse;
+    }
 }

@@ -75,3 +75,8 @@
 #footer .valve_links img {
     vertical-align: bottom;
 }
+@media (max-width:911px){
+    #footer{
+        display: none;
+    }
+}

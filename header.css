@@ -5,23 +5,28 @@ header {
     padding-left: 16px;
     padding-right: 16px;
 }
-header .content{
+
+header .content {
     position: relative;
     width: 940px;
     height: 104px;
     margin: 0 auto;
 }
-header div{
+
+header div {
     display: block;
 }
-header a{
+
+header a {
     text-decoration: none;
 }
-header .nav_container{
+
+header .nav_container {
     position: absolute;
     left: 200px;
 }
-header .nav_container a{
+
+header .nav_container a {
     display: block;
     position: relative;
     padding-top: 45px;
@@ -34,13 +39,16 @@ header .nav_container a{
     color: #b8b6b4;
     text-transform: uppercase;
 }
-header #global_actions a{
+
+header #global_actions a {
     color: #b8b6b4;
 }
-header #global_actions div{
+
+header #global_actions div {
     color: #b8b6b4;
 }
-header #global_actions{
+
+header #global_actions {
     position: absolute;
     right: 0px;
     top: 6px;
@@ -49,10 +57,12 @@ header #global_actions{
     font-size: 11px;
     z-index: 401;
 }
-header #global_actions div{
+
+header #global_actions div {
     display: inline-block;
 }
-header #global_actions .install_btn .install_btn_content{
+
+header #global_actions .install_btn .install_btn_content {
     display: inline-block;
     padding-left: 35px;
     padding-right: 9px;
@@ -65,25 +75,65 @@ header #global_actions .install_btn .install_btn_content{
     background-color: #5c7e10;
     margin-right: 3px;
 }
-header .sign_in_link{
+
+header .sign_in_link {
     padding: 0 4px;
 }
-header .language_choose{
+
+header .language_choose {
     display: inline-block;
     padding-left: 4px;
     line-height: 25px;
 }
-header .language_choose img{
+
+header .language_choose img {
     width: auto;
     height: auto;
     margin: auto;
 }
 
-header .logo{
+header .logo {
     float: left;
     padding-top: 30px;
     margin-right: 40px;
     width: 176px;
     height: 44px;
 }
+header .responsive_header {
+    display : none;
+}
 
+@media screen and (max-width:911px) {
+    header .content {
+        display: none;
+    }
+    header .responsive_header {
+        display: block;
+        background: #171a21;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 20;
+        box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+        overflow: hidden;
+        padding: 13px 8px;
+    }
+    header .responsive_menu_logo {
+        position: absolute;
+        top: 9px;
+        cursor: pointer;
+        width: 34px;
+        height: 31px;
+    }
+    header .responsive_menu_logo img {
+        border: none;
+        width: 36px;
+        height: 31px;
+    }
+    header .responsive_header_logo img {
+        height: 36px;
+        border: none;
+    }
+}
