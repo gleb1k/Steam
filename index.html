@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="settings.css">
+    <meta charset="utf-8">
 </head>
 
 <body>
@@ -61,21 +62,21 @@
                     <div class="login_header">Войти</div>
                     <div class="login_main_part_container">
                         <div class="login_main_part">
-                            <form class="login_form">
+                            <form class="login_form" method="POST" action="/accounts/saveaccount">
                                 <div class="field1">
                                     <div class="text">Войти, используя имя аккаунта</div>
-                                    <input class="edit" type="text" value>
+                                    <input class="edit" type="text" name="login" required>
                                 </div>
                                 <div class="field2">
                                     <div class="text">Пароль</div>
-                                    <input class="edit" type="text" value>
+                                    <input class="edit" type="password" name="password" required>
                                 </div>
                                 <div class="checkbox_remember">
                                     <div class="checkbox"></div>
                                     <div class="field">Запомнить меня</div>
                                 </div>
                                 <div class="enter_btn_container">
-                                    <button class="enter_btn">Войти</button>
+                                    <button class="enter_btn" type="submit">Войти</button>
                                 </div>
                                 <div class="btn_help_gap">&nbsp;</div>
                                 <a class="help"
